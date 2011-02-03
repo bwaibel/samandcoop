@@ -1,5 +1,5 @@
 var catalog = [
-    {tags:['girls','combo'], file:'Rocker combo.jpg',detail:{
+    {tags:['combo'], file:'Rocker combo.jpg',detail:{
         name:'Rocker Combo',
         color:'White short sleeve and white long sleeve',
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
@@ -11,7 +11,7 @@ var catalog = [
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
         description:'100% cotton exclusive of decoration'
     }},
-    {tags:['boys','combo'], file:'Three boys onezee .jpg',detail:{
+    {tags:['combo'], file:'Three boys onezee .jpg',detail:{
         name:'Three Boys Onezee',
         color:'Brown short sleeve and brown long sleeve',
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
@@ -71,7 +71,7 @@ var catalog = [
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
         description:'100% cotton exclusive of decoration'
     }},
-    {tags:['girls','shirt'], file:'chicago.jpg',detail:{
+    {tags:['boys','girls','shirt'], file:'chicago.jpg',detail:{
         name:'Chicago Flag',
         color:'White short sleeve and white long sleeve',
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
@@ -95,7 +95,7 @@ var catalog = [
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
         description:'100% cotton exclusive of decoration'
     }},
-    {tags:['girls','combo'], file:'girl owl set.jpg',detail:{
+    {tags:['combo'], file:'girl owl set.jpg',detail:{
         name:'Girls Owl Set',
         color:'White short sleeve and white long sleeve',
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
@@ -107,7 +107,7 @@ var catalog = [
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
         description:'100% cotton exclusive of decoration'
     }},
-    {tags:['girls','capri','combo'], file:'issey capri both.jpg',detail:{
+    {tags:['capri','combo'], file:'issey capri both.jpg',detail:{
         name:'Issey Capri Combo',
         color:'White short sleeve and white long sleeve',
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
@@ -167,7 +167,7 @@ var catalog = [
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
         description:'100% cotton exclusive of decoration'
     }},
-    {tags:['girls','shirt'], file:'rabbit hat.jpg',detail:{
+    {tags:['boys', 'girls','shirt'], file:'rabbit hat.jpg',detail:{
         name:'Rabbit Hat',
         color:'White short sleeve and white long sleeve',
         sizes:'0-3 onezee, 3-6 onezee, 6-12 onezee, 12-18 onezee, 18-24 laptee, 2T unisex tee, 4T unisex tee, 6T unisex tee',
