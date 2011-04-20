@@ -14,9 +14,9 @@ $content_width = 590;
 
 
 // Setup Clean Home
-add_action( 'after_setup_theme', 'cleanhome_theme_setup' );
+add_action( 'after_setup_theme', 'samandcoop_theme_setup' );
 
-function cleanhome_theme_setup() {
+function samandcoop_theme_setup() {
 
 	// Theme options
 	require( dirname( __FILE__ ) . '/theme-options.php' );
@@ -36,19 +36,19 @@ function cleanhome_theme_setup() {
 
 	add_custom_image_header( '', 'admin_header_style' );
 
-	add_action( 'init', 'cleanhome_register_menus' );
+	add_action( 'init', 'samandcoop_register_menus' );
 
-	add_action( 'widgets_init', 'cleanhome_widgets_init' );
+	add_action( 'widgets_init', 'samandcoop_widgets_init' );
 
 	if ( ! is_admin() )	
-		add_action( 'wp_print_styles', 'cleanhome_color_registrar' );
+		add_action( 'wp_print_styles', 'samandcoop_color_registrar' );
 
 }
 
 // Header navigation menu
-function cleanhome_register_menus() {
+function samandcoop_register_menus() {
 	register_nav_menus( array(
-		'primary' => __( 'Primary Navigation', 'cleanhome' ),
+		'primary' => __( 'Primary Navigation', 'samandcoop' ),
 	) );
 }	
 
@@ -63,27 +63,27 @@ function admin_header_style() {
 	}
 
 // Menu Fallback
-function cleanhome_page_menu() { // fallback for primary navigation ?>
+function samandcoop_page_menu() { // fallback for primary navigation ?>
 <ul>
 	<?php wp_list_pages( 'title_li=&depth=1' ); ?>
 </ul>
 <?php }
 
 // Widgets
-function cleanhome_widgets_init() {
+function samandcoop_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Sidebar', 'cleanhome' ),
+		'name' => __( 'Sidebar', 'samandcoop' ),
 		'id' => 'primary-widget-area',
-		'description' => __( 'The primary widget area', 'cleanhome' ),
+		'description' => __( 'The primary widget area', 'samandcoop' ),
 		'before_widget' => '<div id="%1$s" class="widget block %2$s sidebar-box">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>'
 	));
 	register_sidebar( array(
-		'name' => __( 'Header', 'cleanhome' ),
+		'name' => __( 'Header', 'samandcoop' ),
 		'id' => 'header',
-		'description' => __( 'Header widget area with big font size.', 'cleanhome' ),
+		'description' => __( 'Header widget area with big font size.', 'samandcoop' ),
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h3>',
@@ -92,18 +92,18 @@ function cleanhome_widgets_init() {
 }
 
 // Returns the current Clean Home theme options, with default values for fallback
-function cleanhome_get_theme_options() {
+function samandcoop_get_theme_options() {
 	$defaults = array(
 		'color_scheme' => 'light',
 	);
-	$options = get_option( 'cleanhome_theme_options', $defaults );
+	$options = get_option( 'samandcoop_theme_options', $defaults );
 	
 	return $options;
 }
 
 // Register our color schemes and add them to the queue
-function cleanhome_color_registrar() {
-	$options = cleanhome_get_theme_options();
+function samandcoop_color_registrar() {
+	$options = samandcoop_get_theme_options();
 	$color_scheme = $options['color_scheme'];
 
 	if ( 'dark' == $color_scheme ) {
