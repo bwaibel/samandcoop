@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
+    <title><?php bloginfo( 'name' ); ?><?php wp_title(); ?></title>
 
     <link rel="stylesheet" href="wp-content/themes/samandcoop/stylesheets/screen.css" type="text/css" media="screen, projection"> 
     <link rel="stylesheet" href="wp-content/themes/samandcoop/stylesheets/print.css" type="text/css" media="print"> 
