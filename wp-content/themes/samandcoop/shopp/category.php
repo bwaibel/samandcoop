@@ -1,3 +1,5 @@
+hello category
+
 <?php if(shopp('category','hasproducts','load=prices,images')): ?>
     <div class="category">
         <?php shopp('catalog','breadcrumb'); ?>

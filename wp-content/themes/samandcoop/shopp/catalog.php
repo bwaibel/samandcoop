@@ -1,2 +1,2 @@
-boo hoo haa daa faa taa voo
+hello catalog
 <?php shopp('catalog','catalog-products'); ?>

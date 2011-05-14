@@ -1,3 +1,4 @@
+hello product
 <?php shopp('catalog','breadcrumb')?>
 <?php if (shopp('product','found')): ?>
 
