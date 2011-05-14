@@ -1,5 +1,6 @@
 String.prototype.template=function(map){
     return $(this.replace(/{([^}]+)}/g, function(m,g) {
+        console.log(map, m,g)
         var segments = g.split('.');
         var val = map;
         for(var i in segments) {
@@ -23,6 +24,7 @@ $(function(){
     n.empty();
     var href = location.pathname == '/' ? 'index.html' : location.href;
     $(links).each(function() {
+        console.log(this);
         this['class'] = href.indexOf(this.url) == -1 ? '' : 'selected'
         n.append(link_template.template(this));
     });

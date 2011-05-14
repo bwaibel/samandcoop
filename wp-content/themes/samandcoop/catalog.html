@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Sam and Coop</title>
+ 
+    <!-- Framework CSS --> 
+    <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="stylesheets/print.css" type="text/css" media="print"> 
+    <!--[if lt IE 8]><link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen, projection"><![endif]--> 
+ 
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="all" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>    
+    <script type="text/javascript" src="javascripts/main.js"></script>
+    <script type="text/javascript" src="catalog/list.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        var thumb_template = $('#thumb_template').html();
+        var content = $('#content');
+        function select(path){
+            $('#content p').hide();
+            $('#content .' + path).show();
+            $('body').css('background-color',path.indexOf('boy')!=-1 ? '#9feefc' : '#fbced7');
+        }
+        
+        var i = 0;
+        for(var i in catalog){
+            catalog[i]['class'] = catalog[i].tags.join(' ');
+            catalog[i]['thumb_url'] = 'catalog/thumbs/' + catalog[i].file;
+            catalog[i]['detail_url'] = 'catalog/detail/' + catalog[i].file;
+       
+            var thumb = thumb_template.template(catalog[i])
+            content.append(thumb);
+        }
+        
+        $('#nav a').click(function(event) {
+            setTimeout(function(){
+                select(location.hash.substring(1));
+                $('#nav li.selected').removeClass('selected');
+                $(event.target).parent().addClass('selected');
+            },0)
+        });
+        
+        select(location.hash.substring(1));
+       
+    });
+    
+    </script>
+    
+    <script type="text/html" id="thumb_template">
+    <p class="product {class}" style="display:none;"><img class="thumb" src="{thumb_url}" alt="{detail.name}" /><br /><span class="title">{detail.name}</span></p>
+    </script>
+    
+</head>
+<body>
+    <div id="header"><a href="index.html" id="home"><img src="images/logo_03.png" alt="Sam and Coop" /></a></div>
+    <div id="main">
+        <div id="head">
+            
+            
+            <ul id="nav">
+                
+                
+            </ul>
+            
+        </div>
+        <div id="content">
+        
+            
+            
+        </div>
+        
+        <div id="footer">
+        
+        </div>
+    </div>
+</body>
+</html>
