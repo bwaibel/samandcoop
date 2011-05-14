@@ -3,7 +3,7 @@
 <p class="product">
     <?php shopp('product','coverimage'); ?>
     <br>
-    <span class="title"><?php shopp('product','name'); ?></span>
+    <a href="<?php shopp('product','url'); ?>" class="title"><?php shopp('product','name'); ?></a>
 </p>
 <?php endwhile; ?>
 <?php endif; ?>
