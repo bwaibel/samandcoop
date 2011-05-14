@@ -32,7 +32,7 @@
     <div id="main">
         <div id="head">
             <ul id="nav">
-                <<li><a href="/">home</a></li>
+                <li><a href="/">home</a></li>
                 <?php shopp('catalog','category-list','depth=1&wraplist=off'); ?>
             </ul>
         </div>
