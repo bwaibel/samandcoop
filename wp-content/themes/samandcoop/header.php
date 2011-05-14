@@ -17,7 +17,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(shopp('category','name')); ?>>
 
     <div id="header">
         <a href="<?php echo home_url(); ?>" id="home">
