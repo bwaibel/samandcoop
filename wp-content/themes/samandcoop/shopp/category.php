@@ -1,7 +1,7 @@
 <?php if(shopp('category','hasproducts','load=prices,images')): ?>
 <?php while(shopp('category','products')): ?>
 <p class="product">
-    <?php shopp('product','coverimage'); ?>
+    <?php shopp('product','coverimage', 'width=200&height=200'); ?>
     <br>
     <a href="<?php shopp('product','url'); ?>" class="title"><?php shopp('product','name'); ?></a>
 </p>
