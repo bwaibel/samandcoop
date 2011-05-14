@@ -1,4 +1,10 @@
-hello category
+<?php while(shopp('category','products')): ?>
+<p class="product">
+    <?php shopp('product','coverimage'); ?>
+    <br>
+    <span class="title"><?php shopp('product','name'); ?></span>
+</p>
+<?php endwhile; ?>
 <!--
 <?php if(shopp('category','hasproducts','load=prices,images')): ?>
     <div class="category">

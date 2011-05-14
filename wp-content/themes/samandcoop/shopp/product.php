@@ -1,4 +1,9 @@
-hello product
+<p class="product">
+    <?php shopp('product','gallery'); ?>
+    <br>
+    <span class="title"><?php shopp('product','name'); ?></span>
+</p>
+<!--
 <?php shopp('catalog','breadcrumb')?>
 <?php if (shopp('product','found')): ?>
 
@@ -52,3 +57,4 @@ hello product
 <h3>Product Not Found</h3>
 <p>Sorry! The product you requested is not found in our catalog!</p>
 <?php endif; ?>
+-->
