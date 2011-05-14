@@ -1,5 +1,5 @@
 hello category
-
+<!--
 <?php if(shopp('category','hasproducts','load=prices,images')): ?>
     <div class="category">
         <?php shopp('catalog','breadcrumb'); ?>
@@ -51,3 +51,4 @@ hello category
                 <p>No products were found.</p>
             <?php endif; ?>
         <?php endif; ?>
+-->
