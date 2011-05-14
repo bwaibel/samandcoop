@@ -14,7 +14,9 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>    
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/javascripts/main.js"></script>
-
+    <script type="text/javascript">
+    var template_url = "<?php bloginfo('template_url'); ?>"
+    </script>
 
     <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
     
