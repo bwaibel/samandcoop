@@ -20,10 +20,10 @@ $(function(){
         {url:'catalog.html#skort.front',title:'skorts'}
     ];
     
-    var n = $('#nav');
+    /*var n = $('#nav');
     n.empty();
     var href = location.pathname == '/' ? 'index.html' : location.href;
-    /*$(links).each(function() {
+    $(links).each(function() {
         console.log(this);
         this['class'] = href.indexOf(this.url) == -1 ? '' : 'selected'
         n.append(link_template.template(this));
