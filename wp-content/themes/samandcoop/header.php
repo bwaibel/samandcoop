@@ -29,7 +29,7 @@
         <div id="head">
             <ul id="nav">
                 <li id="home_nav"><a href="/">home</a></li>
-                <?php shopp('catalog','category-list','depth=1&wraplist=off'); ?>
+                <?php shopp('catalog','category-list','depth=1&wraplist=off&exclude=home'); ?>
             </ul>
         </div>
         <div id="content">
