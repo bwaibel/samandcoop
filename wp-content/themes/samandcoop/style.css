@@ -77,12 +77,12 @@ h1 {
     text-align:center;
     border-bottom:solid 1px #ddd;
 }
-#nav li.selected {
+#nav li.current {
     color:#ddd;
     border-bottom:solid 3px #ddd;
 
 }
-#nav li.selected a {
+#nav li.current a {
     color:#555;
 }
 #nav a {
