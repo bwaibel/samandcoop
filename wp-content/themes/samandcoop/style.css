@@ -77,7 +77,7 @@ h1 {
     text-align:center;
     border-bottom:solid 1px #ddd;
 }
-#nav li.current {
+.home #home, #nav li.current {
     color:#ddd;
     border-bottom:solid 3px #ddd;
 
